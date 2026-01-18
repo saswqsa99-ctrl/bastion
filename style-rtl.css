@@ -1,0 +1,549 @@
+/* ==========================================================================
+   Lalan RTL Support (style-rtl.css)
+   ========================================================================== */
+
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ----------------------------------------------------------------
+   1. Bootstrap Grid & Float Flips
+   ---------------------------------------------------------------- */
+.pull-right {
+    float: left !important;
+}
+
+.pull-left {
+    float: right !important;
+}
+
+.navbar-right {
+    float: left !important;
+    margin-right: -15px;
+}
+
+.navbar-left {
+    float: right !important;
+    margin-left: -15px;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    float: right;
+}
+
+/* ----------------------------------------------------------------
+   2. Typography & Alignment
+   ---------------------------------------------------------------- */
+.text-left {
+    text-align: right;
+}
+
+.text-right {
+    text-align: left;
+}
+
+/* In RTL, lists usually need zero right padding and some right margin, 
+   but Bootstrap sets padding-left which we need to unset and set padding-right. */
+ul,
+ol {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+ul.list-unstyled,
+ul.list-inline {
+    padding-right: 0;
+}
+
+/* ----------------------------------------------------------------
+   3. Spacing Helpers (Margin/Padding Flips)
+   ---------------------------------------------------------------- */
+
+/* Margin Right -> now Margin Left */
+.mr-0 {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+.mr-30 {
+    margin-left: 30px !important;
+    margin-right: auto !important;
+}
+
+.mr-50 {
+    margin-left: 50px !important;
+    margin-right: auto !important;
+}
+
+.mr-60 {
+    margin-left: 60px !important;
+    margin-right: auto !important;
+}
+
+.mr-150 {
+    margin-left: 150px !important;
+    margin-right: auto !important;
+}
+
+/* Margin Left -> now Margin Right */
+.ml-0 {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+
+.ml-xs {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.ml-sm {
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.ml-md {
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+.ml-lg {
+    margin-right: 80px;
+    margin-left: auto;
+}
+
+.ml-30 {
+    margin-right: 30px !important;
+    margin-left: auto !important;
+}
+
+.ml-50 {
+    margin-right: 50px !important;
+    margin-left: auto !important;
+}
+
+.ml-60 {
+    margin-right: 60px !important;
+    margin-left: auto !important;
+}
+
+.ml-150 {
+    margin-right: 150px !important;
+    margin-left: auto !important;
+}
+
+/* Padding Right -> now Padding Left */
+.pr-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* assuming reset */
+.pr-xs {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.pr-sm {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.pr-md {
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+.pr-lg {
+    padding-left: 80px;
+    padding-right: 0;
+}
+
+.pr-15 {
+    padding-left: 15px !important;
+    padding-right: 0 !important;
+}
+
+.pr-30 {
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+}
+
+.pr-50 {
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+.pr-60 {
+    padding-left: 60px;
+    padding-right: 0;
+}
+
+.pr-100 {
+    padding-left: 100px !important;
+    padding-right: 0 !important;
+}
+
+.pr-150 {
+    padding-left: 150px;
+    padding-right: 0;
+}
+
+/* Padding Left -> now Padding Right */
+.pl-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.pl-30 {
+    padding-right: 30px !important;
+    padding-left: 0 !important;
+}
+
+.pl-50 {
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.pl-60 {
+    padding-right: 60px;
+    padding-left: 0;
+}
+
+.pl-100 {
+    padding-right: 100px !important;
+    padding-left: 0 !important;
+}
+
+.pl-150 {
+    padding-right: 150px;
+    padding-left: 0;
+}
+
+
+/* ----------------------------------------------------------------
+   4. Navbar & Navigation
+   ---------------------------------------------------------------- */
+.navbar-nav>li {
+    float: right;
+}
+
+.navbar-header {
+    float: right;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+    float: right;
+    /* Sometimes needed */
+}
+
+/* Submenus usually fly out to right in LTR, flip to left in RTL */
+/* Submenus usually fly out to right in LTR, flip to left in RTL */
+li.has-dropdown>ul.dropdown-menu>li.dropdown-submenu>ul.dropdown-menu,
+.dropdown-menu .dropdown-submenu .dropdown-menu {
+    right: 100% !important;
+    left: auto !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Fix Dropdown Arrows Position & Icon */
+/* Top-level menu arrow (down) */
+li.has-dropdown>a:before {
+    right: auto;
+    left: -13px;
+}
+
+/* Submenu indicator arrow (pointing left for RTL) */
+li.has-dropdown>ul.dropdown-menu>li.dropdown-submenu>a:before,
+ul.dropdown-menu>li.has-dropdown>a:before {
+    right: auto;
+    left: 20px;
+    /* Align to left */
+    content: "\f104";
+    /* Angle left icon */
+}
+
+/* Ensure Dropdown text alignment */
+.dropdown-menu>li>a {
+    text-align: right;
+    padding-right: 20px;
+    /* Indent text from right */
+    padding-left: 10px;
+}
+
+/* Navbar center/right/left positioning fixes */
+.navbar-nav.navbar-left {
+    float: right !important;
+    /* Keep it right in RTL logic (which is Start) */
+}
+
+.module {
+    float: right !important;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.module-property {
+    border-left: none;
+    border-right: 1px solid #e5e5e5;
+    /* Flip border */
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.module .btn {
+    margin-right: 0;
+}
+
+/* ----------------------------------------------------------------
+   5. Forms & Inputs
+   ---------------------------------------------------------------- */
+.form-control {
+    text-align: right;
+    /* Ensure input text starts from right */
+}
+
+/* Select Box Arrows */
+.select--box i,
+.form-group .select--box i {
+    right: auto;
+    left: 15px;
+    /* Move arrow to left */
+}
+
+.input-checkbox .label-checkbox {
+    padding-left: 0;
+    padding-right: 25px;
+    /* Checkbox square space */
+}
+
+.input-checkbox .check-indicator {
+    left: auto;
+    right: 0;
+}
+
+/* ----------------------------------------------------------------
+   6. Icons & Buttons
+   ---------------------------------------------------------------- */
+
+
+.btn i {
+    margin-right: 0;
+    margin-left: 8px;
+    /* assuming standard spacing */
+}
+
+.feature--icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.feature--content {
+    text-align: right;
+    overflow: hidden;
+    /* Clear floats */
+}
+
+/* ----------------------------------------------------------------
+   7. Property Cards & Sliders
+   ---------------------------------------------------------------- */
+.property--img {
+    float: right;
+}
+
+/* If content is floated */
+
+
+.property--features li span.feature {
+    float: right;
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.property--features li span.feature-num {
+    float: left;
+}
+
+/* Badges / Status */
+.property--status {
+    left: auto;
+    right: 20px;
+}
+
+/* Carousel Dots / Nav */
+
+
+.owl-carousel .owl-stage-outer {
+    direction: ltr;
+    /* Fix for Owl Carousel 2 glitching in RTL sometimes */
+}
+
+.owl-carousel .owl-item {
+    direction: rtl;
+    /* Text inside items back to RTL */
+}
+
+/* ----------------------------------------------------------------
+   8. Footer & Misc
+   ---------------------------------------------------------------- */
+.footer-widget .social-icons a {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* Social Profile */
+.social-profile a i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* Widget Search */
+.widget-search .form-search .input-group-btn {
+    left: 0;
+    right: auto;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: none;
+    border-right: 2px solid #64ddbb;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+/* Close buttons (Modals) */
+.close {
+    float: left;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+/* Search Box Position */
+
+
+/* ----------------------------------------------------------------
+   9. Custom Specifics from Lalan
+   ---------------------------------------------------------------- */
+/* Fix for "float: left" utilities commonly used in features */
+.feature-panel .feature--icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* ----------------------------------------------------------------
+   10. Accordion Fix (RTL)
+   ---------------------------------------------------------------- */
+.accordion .panel--heading .accordion-toggle:after {
+    right: auto;
+    left: 0;
+}
+
+.accordion .panel--heading .accordion-toggle {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+/* ----------------------------------------------------------------
+   11. Price Slider Fix (Force LTR)
+   ---------------------------------------------------------------- */
+.slider-range,
+.ui-slider-horizontal {
+    direction: ltr !important;
+}
+
+/* ----------------------------------------------------------------
+   12. Typography Alignment (Force Right for RTL)
+   ---------------------------------------------------------------- */
+.heading,
+.heading--title,
+.entry--title,
+.entry--content,
+.title,
+.title--content,
+.property--details p,
+.feature-item p,
+.property--location ul li,
+.accordion-toggle,
+.review-comment .comment,
+.widget--title h5,
+.widget--content {
+    text-align: right !important;
+}
+
+.pull-left {
+    float: right !important;
+}
+
+.pull-right {
+    float: left !important;
+}
+
+.text-left {
+    text-align: right !important;
+}
+
+.text-right {
+    text-align: left !important;
+}
